@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display 속성</title>
+    <style>
+      ul {
+        list-style-type: none;
+        background-color: #333;
+      }
+      ul li {
+        display: inline-block;
+        padding: 20px;
+      }
+      li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+      }
+      li:hover a {
+        background-color: #fff;
+      }
+      #big {
+        display: none;
+      }
+    </style>
+    <script>
+      function sizeUp() {
+        document.getElementById("big").style.display = "block";
+      }
+      function sizeDown() {
+        document.getElementById("big").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+      </ul>
+    </nav>
+    <div class="small">
+      <img
+        src="img/christmas.jpg"
+        width="100px"
+        onmouseover="sizeUp();"
+        onmouseout="sizeDown();"
+      />
+    </div>
+    <div id="big">
+      <img src="img/christmas.jpg" />
+    </div>
+  </body>
+</html>

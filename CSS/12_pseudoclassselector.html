@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>의사(가상) 클래스</title>
+    <!--의사전달이 가능함-->
+    <style>
+      li:hover {
+        background-color: yellow;
+      } /* li에 마우스를 올리면 배경색이 노란색으로 바뀐다.*/
+
+      a:visited {
+        /* 방문했던 페이지 */
+        color: red;
+      }
+      h1::first-letter {
+        /* h1태그의 첫 글자*/
+        font-size: 40px;
+      }
+      .firstUl li:nth-child(even) { /*홀수번째 li*/
+        border: 1px dotted blue;
+      }
+      input:checked + label {
+        color: red; 
+        font-weight: bold;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>eb Front기술</h1>
+    <ul>
+      <li><a href="https://namu.wiki/w/HTML">html</a></li>
+      <li><a href="https://namu.wiki/w/HTML">css</a></li>
+      <li><a href="https://namu.wiki/w/HTML">javascript</a></li>
+      <li><a href="https://namu.wiki/w/HTML">jquery</a></li>
+      <li><a href="https://namu.wiki/w/HTML">Ajax<a></li>
+      </ul>
+      <ul>
+    <li>
+    <input type="radio" name="room" id="basic" /> 
+    <label for="basic">기본형(최대2인)</label>
+    </li>
+   <li>
+     <input type="radio" name="room" id="family">
+    <label for="family">가족형(최대8인)</label>
+    </li>
+</ul>
+  </body>
+</html>

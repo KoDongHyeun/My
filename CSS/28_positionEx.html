@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positiong 속성</title>
+    <style>
+      p {
+        width: 200px;
+        height: 200px;
+      }
+      #staic {
+        position: static; /* position : static을 사용하면 , top ,left , right ,bottom무시*/
+        top: 500px;
+        background-color: yellow;
+      }
+      #relative-1 {
+        position: relative;
+        /* position:속성을 relative로 사용하더라도 , top,left,bottom,right값을 적용하지 않으면 원래 출력되는 곳 자리에 출력된다 */
+        /* top: 100px;  */
+        /* left: 500px;  */
+        background-color: blue;
+      }
+      #relative-2 {
+        position: relative;
+        left: 500px;
+        top: 100px;
+        background-color: pink;
+      }
+      #flxed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="staic">position :staic</p>
+    <p id="relative-1">position :relative</p>
+    <p id="relative-2">position :relative</p>
+    <div id="flxed">
+      <a href="#staic"><img src="img/arrow-up.png" width="50px" /></a>
+    </div>
+  </body>
+</html>

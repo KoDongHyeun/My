@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>알반 동위(이웃)선택자</title>
+    <style>
+      div ~ p {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>sibling선택자</h1>
+    <p>sibling선택자로 스타일을 꾸미면 어떻게 될까</p>
+    <div>
+      <p>sibling선택자 내부 태그1(div의자식)</p>
+      <p>태그2(div의자식)</p>
+      <p>div 내부 태그3(div의자식)</p>
+      <h3>
+        <p>div내부내부의 p태그1(h3태그의 자식,div의자손)</p>
+      </h3>
+    </div>
+    <p>div 외부 p 태그1</p>
+    <p>div 외부 p 태그2</p>
+    <h4>
+      div 외부 h4태그
+      <p>이것은 동위가 아니다</p>
+    </h4>
+
+    <p>div 외부 p 태그1</p>
+  </body>
+</html>

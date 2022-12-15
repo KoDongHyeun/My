@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OverflowEx</title>
+    <style>
+      div.overflow {
+        width: 100px;
+        height: 200px;
+        background-color: violet;
+        overflow: auto;
+      }
+      div.ellipse {
+        width: 100px;
+        height: 200px;
+        background-color: cornflowerblue;
+        overflow: hidden;
+        /* 넓이가 100px 넘는 내용을 보이지 않게 처리*/
+        text-overflow: ellipsis;
+        /* 넓이가 100px을 넘을 경우 생략부호(...)을 표시한다*/
+        white-space: nowrap;
+        /* 공백 문자가 있는 경우 줄바꿈 하지 않고 한줄로 나오게 처리한다*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overflow">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </div>
+    <div class="ellipse">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </div>
+  </body>
+</html>

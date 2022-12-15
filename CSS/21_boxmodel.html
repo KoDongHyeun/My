@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoxModel</title>
+    <style>
+      div {
+        box-sizing: content-box;
+        background-color: gray;
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+      }
+      div {
+        box-shadow: 5px 5px 15px 5px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>아래의 div 크기를 계산해 보자구요</h2>
+    <div>Css box BoxModel</div>
+    div의 가로사이즈 : 300 + 100 + 30 + 40의 합 470px;
+  </body>
+</html>

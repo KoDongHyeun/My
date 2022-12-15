@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#contents {
+  background: url("../img/christmas.jpg") no-repeat;
+  height: 426px;
+  width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  text-shadow: 2px 3px 0#0000;
+}
+h5 {
+  font-size: 50px;
+  position: absolute;
+  top: 50px;
+  color: white;
+  right: 20px;
+}
