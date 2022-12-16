@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기초문법 응용 프로그래밍연습1</title>
+    <script>
+      // 문제1) 가로가 3cm, 높이가 6cm인 직사각형의 넓이를 구해 출력하는 프로그램을 만드세요.
+      // 1) 가로 값 과 세로 값을 저장(변수)
+      let width = 3,
+        heigt = 6,
+        area;
+      console.log(width, heigt, (area = 0));
+      // 2) 넓이는 가로*세로 공식을 이용하여 결과를 구하고 넓이값을 저장
+      area = width * heigt;
+      // 3) 화면이 넓이값을 출력
+      document.write("<div>" + area + "cm<sup>2</sup></div>");
+
+      //문제2) 반지름이 5cm인 원의 원넓이를 구하고 출력하세요.
+      //1) 반지름을 저장한다 .원넓이를 저장할 변수 선언, 원주율 변수를 선언하고 값을 대입한다.
+      let radius = 5,
+        circleArea,
+        pi = 3.141592;
+
+      //2) 원넓이는 파이반지름*2를 이용하여 결과를 구하고 원넓이값을 저장
+      circleArea = pi * radius * radius;
+      //3) 화면에 원넓이 값을 출력
+      document.write("<div>" + circleArea + "cm<sup>2</sup></div>");
+
+      //문제3) num1이라는 변수에 3이 대입되어 있고, num2라는 변수에 5라는 값이 있는데,
+      //두변수의 값을 바꾸어 저장되도록하고,출력하세요.
+
+      //1) num1,num2를 지정한다. num1,num2를 저장할 변수 선언,값을대입한다
+      let num1 = 3,
+        num2 = 5,
+        temp = 0;
+      console.log(num1, num2, temp);
+
+      //2) nmu1의 값을 템프에 복사
+      temp = num1;
+      console.log(num1, num2, temp); //3 5 3
+      //3) num2의 값을 num1로 복사
+
+      num1 = num2;
+      console.log(num1, num2, temp); //553
+      //3) temp의 값을 num2에 복사
+      num2 = temp;
+      console.log(num1, num2, temp);
+      //4) 화면에 바뀐 수를 출력하기//533
+
+      //문4) 밑변과 높이를 유저에게 입력받아,삼각형의 넓이를 구해 출력하는 프로그램을 만드세요.
+      //삼각형의 넓이 = 밑변*높이/2;
+      //1)밑변,높이,넓이 저장할 변수를 선언
+      let base = 0,
+        triangleheigt = 0,
+        triangArea = 0;
+      //2)밑변과 높이를 유저에게 각각 입력받는다
+      base = Number(window.prompt("밑변을 입력하세요", "0"));
+      console.log(base);
+      triangleheigt = Number(window.prompt("높이를 입력하세요", "0"));
+      console.log(triangleheigt);
+      //3)삼각형의 = 밑변*높이 .2 공식으로 삼각형 넓이를 구해 저장한다.
+      triangArea = (base * triangleheigt) / 2;
+      //4)삼각형의 넓이를 출력한다.
+      document.write("삼각형의 넓이는 : " + triangArea + "cm<sup>2</sup>");
+    </script>
+  </head>
+  <body></body>
+</html>
